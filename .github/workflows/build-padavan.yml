@@ -77,7 +77,6 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_FRPS=n" >> .config #内网穿透FRPS
         echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=n" >> .config #TUNSAFE
         echo "CONFIG_FIRMWARE_INCLUDE_ALIDDNS=n" >> .config #阿里DDNS
-        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSL_EC=y" >> .config #smartdns_lib
         echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config #smartdns
         echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN=y" >> .config #smartdns二进制文件
         echo "CONFIG_FIRMWARE_INCLUDE_V2RAY=n" >> .config #集成v2ray执行文件（3.8M左右)，如果不集成，会从网上下载下来执行，不影响正常使用
@@ -95,6 +94,89 @@ jobs:
         #格式如下：
         #sed -i '/自定义项/d' .config
         #echo "自定义项=y" >> .config
+        
+        echo "CONFIG_FIRMWARE_CPU_SLEEP=y
+        echo "CONFIG_FIRMWARE_ENABLE_IPV6=n" >>
+        echo "CONFIG_FIRMWARE_ENABLE_UFSD=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_ANTFS=n" >>
+        echo "CONFIG_FIRMWARE_ENABLE_FAT=n" >>
+        echo "CONFIG_FIRMWARE_ENABLE_EXFAT=n" >>
+        echo "CONFIG_FIRMWARE_ENABLE_EXT2=n" >>
+        echo "CONFIG_FIRMWARE_ENABLE_EXT3=n" >>
+        echo "CONFIG_FIRMWARE_ENABLE_EXT4=n" >>
+        echo "CONFIG_FIRMWARE_ENABLE_XFS=n" >>
+        echo "CONFIG_FIRMWARE_ENABLE_FUSE=n" >>
+        echo "CONFIG_FIRMWARE_ENABLE_SWAP=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_UVC=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_HID=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_SERIAL=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_AUDIO=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_QOS=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_IMQ=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_IFB=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_IPSET=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_NFSD=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_NFSC=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_CIFS=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_NTFS_3G=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_LPRD=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_U2EC=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_TCPDUMP=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_HDPARM=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_PARTED=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_SMBD=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_SMBD36=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_WINS=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_SMBD_SYSLOG=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_FTPD=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_RPL2TP=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_EAP_PEAP=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_DDNS_SSL=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_SFTP=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR_FAST_CODE=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSL_EC=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_XUPNPD=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_FIREFLY=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_ARIA=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_CURL=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_GDUT_DRCOM=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_DOGCOM=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_MINIEAP=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_NJIT_CLIENT=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_NAPT66=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CLIENT=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CMD=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_VLMCSD=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_TTYD=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_LRZSZ=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_HTOP=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_NANO=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_IPERF3=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_DUMP1090=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_RTL_SDR=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_MTR=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_FRPC=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_FRPS=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=n" >>
+        echo "CONFIG_FIRMWARE_INCLUDE_WIREGUARD=n" >>
+
         #########################################################################################
         sudo ./clear_tree
         sudo ./build_firmware_modify $TNAME 0
