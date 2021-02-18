@@ -135,7 +135,6 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_RPL2TP=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_EAP_PEAP=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_DDNS_SSL=n" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SFTP=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR_FAST_CODE=n" >> .config
