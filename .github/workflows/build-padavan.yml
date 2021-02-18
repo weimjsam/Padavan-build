@@ -94,6 +94,8 @@ jobs:
         #格式如下：
         #sed -i '/自定义项/d' .config
         #echo "自定义项=y" >> .config
+        echo "CONFIG_FIRMWARE_ENABLE_IPV6=n" >> .config
+        echo "CONFIG_FIRMWARE_ENABLE_USB=n" >> .config
         echo "CONFIG_FIRMWARE_ENABLE_UFSD=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_ANTFS=n" >> .config
         echo "CONFIG_FIRMWARE_ENABLE_FAT=n" >> .config
