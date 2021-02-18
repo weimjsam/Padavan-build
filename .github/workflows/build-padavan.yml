@@ -111,7 +111,6 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_QOS=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_IMQ=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_IFB=n" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_IPSET=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_NFSD=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_NFSC=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_CIFS=n" >> .config
@@ -133,10 +132,8 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_SFTP=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR_FAST_CODE=n" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_OPENSSL_EC=n" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_XUPNPD=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_FIREFLY=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW=n" >> .config
