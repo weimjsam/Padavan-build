@@ -94,10 +94,12 @@ jobs:
         #格式如下：
         #sed -i '/自定义项/d' .config
         #echo "自定义项=y" >> .config
-        sed -i '/CONFIG_FIRMWARE_ENABLE_IPV6/d' .config
-        echo "CONFIG_FIRMWARE_ENABLE_IPV6=n" >> .config
-        sed -i '/CONFIG_FIRMWARE_ENABLE_USB/d' .config
-        echo "CONFIG_FIRMWARE_ENABLE_USB=n" >> .config
+        echo "CONFIG_MMC=n" >> .config
+        echo "CONFIG_MMC_BLOCK=n" >> .config
+        echo "CONFIG_MMC_SDHCI=n" >> .config
+        echo "CONFIG_MTK_MMC=n" >> .config
+        echo "CONFIG_MTK_MMC_EMMC_8BIT=n" >> .config
+        echo "CONFIG_MTK_MMC_CD_POLL=n" >> .config
         echo "CONFIG_FIRMWARE_ENABLE_UFSD=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_ANTFS=n" >> .config
         echo "CONFIG_FIRMWARE_ENABLE_FAT=n" >> .config
